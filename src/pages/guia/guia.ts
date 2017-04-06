@@ -4,12 +4,6 @@ import { GuiaListagem } from '../../providers/guia-listagem';
 import { ModalDefaultPage } from '../modal-default/modal-default';
 
 
-/*
-  Generated class for the Guia page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-guia',
   templateUrl: 'guia.html',
@@ -36,10 +30,15 @@ export class GuiaPage {
 		this.GuiaListagem.getAcademias()
 		.then(data => {
 			this.data = data;
-		})
-		let modalDefault = this.modalCtrl.create(ModalDefaultPage, this.data);
-		modalDefault.present();
+			this.openDefaultModal(this.data);
+		});
+		
+
 	}
 
+	openDefaultModal(data){
+		let modalDefault = this.modalCtrl.create(ModalDefaultPage, {data: this.data.rows});
+		modalDefault.present();
+	}
 
 }

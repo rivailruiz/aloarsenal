@@ -7,12 +7,22 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>modalDefault</ion-title>
+    <ion-title>lol</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+<ion-list>
+  <ion-item *ngFor="let item of data">
+    <ion-thumbnail item-left>
+      <img src="{{item.img}}">
+    </ion-thumbnail>
+    <h2>{{item.nome}}</h2>
+    <button ion-button clear color="dark" item-right>View</button>
+  </ion-item>
+</ion-list>
 
 </ion-content>

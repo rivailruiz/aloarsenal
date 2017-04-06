@@ -13,10 +13,11 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ModalDefaultPage {
 
-	academias: any;
+	data: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	console.log(this.academias);
+    this.data = this.navParams.get('data');
+    console.log(this.data);
   }
 
   ionViewDidLoad() {
