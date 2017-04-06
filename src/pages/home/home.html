@@ -1,0 +1,46 @@
+<ion-content padding>
+
+<div text-center><img fab-center src="assets/icon/logo.png"></div>
+<div text-center class="branco">Arsenal Bairro</div>
+
+  <ion-grid>
+    <ion-row>
+        <ion-col col-3 class="item" text-center (tap)="abrirGuia()">
+          <img src="assets/icon/earth.png" text-center>
+          <div>Guia</div>
+        </ion-col>
+        <ion-col col-3 class="item" text-center>
+          <img src="assets/icon/shopping-cart.png" text-center>
+          <div>Ofertas locais</div>
+        </ion-col>
+       <ion-col col-3 class="item" text-center>
+        <img src="assets/icon/book.png" text-center>
+          <div>Classificados</div>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 class="item" text-center>
+          <img src="assets/icon/event.png" text-center>
+          <div>Eventos</div>
+      </ion-col>
+      <ion-col col-3 class="item" text-center>
+          <img src="assets/icon/tel.png" text-center>
+          <div>Telefones úteis</div>
+      </ion-col>
+      <ion-col col-3 class="item" text-center (tap)="abrirNoticias()">
+          <img src="assets/icon/news.png" text-center>
+          <div>Noticias</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 class="item" text-center>
+          <img src="assets/icon/bus.png" text-center>
+          <div>Horário de ônibus</div>
+      </ion-col>
+      <ion-col col-3 class="item" text-center>
+          <img src="assets/icon/fb.png" text-center>
+          <div>Facebook</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header>
+  <button ion-button clear color="light" (tap)="fecharModal()">Fechar</button>
+</ion-header>
+
+<ion-content padding>
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Deslize para atualizar"
+      refreshingSpinner="circles"
+      refreshingText="Atualizando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <h1>Ultimas noticias</h1>
+ <!-- <ion-list>
+ <ion-thumbnail item-left>
+      <img src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png">
+    </ion-thumbnail>
+  <button *ngFor="let post of post" ion-item  (click)="itemSelected(item)">
+    {{post.title.rendered}}
+  </button> 
+</ion-list> -->
+<ion-list>
+  <ion-item *ngFor="let post of post">
+    <ion-thumbnail item-left>
+      <img src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png">
+    </ion-thumbnail>
+    <h2>{{post.title.rendered}}</h2>
+    <p [innerHTML]="post.content.rendered"></p>
+    <p>{{post.date | date:'shortTime'}}</p>
+    <button ion-button clear item-right (tap)="abrePost(post)">Abrir</button>
+  </ion-item>
+</ion-list>
+</ion-content>
