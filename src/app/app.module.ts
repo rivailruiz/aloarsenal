@@ -8,6 +8,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { PostPage } from '../pages/post/post';
 import { NoticiasPage } from '../pages/noticias/noticias';
 import { GuiaPage } from '../pages/guia/guia';
+import { OnibusPage } from '../pages/onibus/onibus';
+import { ClassificadosPage } from '../pages/classificados/classificados';
+import { OfertasPage } from '../pages/ofertas/ofertas';
 import { ModalDefaultPage } from '../pages/modal-default/modal-default';
 
 @NgModule({
@@ -20,7 +23,10 @@ import { ModalDefaultPage } from '../pages/modal-default/modal-default';
     PostPage,
     NoticiasPage,
     GuiaPage,
-    ModalDefaultPage
+    ModalDefaultPage,
+    OnibusPage,
+    ClassificadosPage,
+    OfertasPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +41,10 @@ import { ModalDefaultPage } from '../pages/modal-default/modal-default';
     PostPage,
     NoticiasPage,
     GuiaPage,
-    ModalDefaultPage
+    ModalDefaultPage,
+    OnibusPage,
+    ClassificadosPage,
+    OfertasPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

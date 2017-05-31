@@ -1,12 +1,31 @@
-page-home {
-	.item{
-		// background-color: #27ae60;
-		margin: 10px;
-		border-radius: 10px;
-		color: #fff;
-	}
 
-	.branco{
-		color: #fff;
-	}
+
+  ion-card {
+    position: relative;
+    text-align: center;
+    margin-top: 0 !important; 
+    background: #fff !important;
+    border-radius: 10px !important;
+  }
+
+  .card-title {
+    // position: absolute;
+    top: 82%;
+    font-size: 1.0em;
+    width: 100%;
+    // font-weight: bold;
+    color: #000;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+.margin{
+	position: absolute;
 }
+

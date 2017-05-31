@@ -1,46 +1,56 @@
 <ion-content padding>
 
 <div text-center><img fab-center src="assets/icon/logo.png"></div>
-<div text-center class="branco">Arsenal Bairro</div>
+<div text-center>Arsenal Bairro</div>
 
-  <ion-grid>
+  <ion-grid class="margin">
     <ion-row>
-        <ion-col col-3 class="item" text-center (tap)="abrirGuia()">
-          <img src="assets/icon/earth.png" text-center>
-          <div>Guia</div>
-        </ion-col>
-        <ion-col col-3 class="item" text-center>
-          <img src="assets/icon/shopping-cart.png" text-center>
-          <div>Ofertas locais</div>
-        </ion-col>
-       <ion-col col-3 class="item" text-center>
-        <img src="assets/icon/book.png" text-center>
-          <div>Classificados</div>
-        </ion-col>
+          <ion-card text-center col-3 (tap)="abrirGuia()">
+            <img src="assets/icon/earth.png">
+            <div class="card-title">Guia</div>
+          </ion-card>
+
+          <ion-card col-3 (tap)="abrirOfertas()">
+            <img src="assets/icon/shopping-cart.png">
+            <div class="card-title">Ofertas</div>
+          </ion-card>
+
+          <ion-card col-3 (tap)="abrirClassificados()">
+            <img src="assets/icon/book.png">
+            <div class="card-title">Classificados</div>
+          </ion-card>
     </ion-row>
     <ion-row>
-      <ion-col col-3 class="item" text-center>
-          <img src="assets/icon/event.png" text-center>
-          <div>Eventos</div>
-      </ion-col>
-      <ion-col col-3 class="item" text-center>
-          <img src="assets/icon/tel.png" text-center>
-          <div>Telefones úteis</div>
-      </ion-col>
-      <ion-col col-3 class="item" text-center (tap)="abrirNoticias()">
-          <img src="assets/icon/news.png" text-center>
-          <div>Noticias</div>
-      </ion-col>
-    </ion-row>
+          <ion-card text-center col-3>
+            <img src="assets/icon/event.png">
+            <div class="card-title">Eventos</div>
+          </ion-card>
+
+          <ion-card col-3>
+            <img src="assets/icon/tel.png">
+            <div class="card-title">Telefones úteis</div>
+          </ion-card>
+
+          <ion-card col-3>
+            <img src="assets/icon/news.png">
+            <div class="card-title">Notícias</div>
+          </ion-card>
+    </ion-row>  
     <ion-row>
-      <ion-col col-3 class="item" text-center>
-          <img src="assets/icon/bus.png" text-center>
-          <div>Horário de ônibus</div>
-      </ion-col>
-      <ion-col col-3 class="item" text-center>
-          <img src="assets/icon/fb.png" text-center>
-          <div>Facebook</div>
-      </ion-col>
-    </ion-row>
+          <ion-card text-center col-3 (tap)="abrirOnibus()">
+            <img src="assets/icon/bus.png">
+            <div class="card-title">Horários de ônibus</div>
+          </ion-card>
+
+          <ion-card col-3>
+            <img src="assets/icon/fb.png">
+            <div class="card-title">Facebook</div>
+          </ion-card>
+
+          <ion-card col-3>
+            <img src="assets/icon/question.png">
+            <div class="card-title">Info</div>
+          </ion-card>
+    </ion-row> 
   </ion-grid>
 </ion-content>

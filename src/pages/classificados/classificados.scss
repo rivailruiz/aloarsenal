@@ -1,0 +1,124 @@
+page-classificados {
+	&.content-ios {
+    > .scroll-content,
+    > .fixed-content,
+    > ion-refresher {
+      margin-top: 72px;
+    }
+    > ion-refresher {
+      padding: 16px 0;
+    }
+  }
+  
+	ion-card.card-event ion-card-title {
+    font-weight: 300;
+  }
+  .card-content-ios {
+    padding: 10px 16px 10px 16px !important;
+  }
+
+  ion-icon{
+    font-size: 1.8em;
+  }
+
+  img{
+    height: 220px;
+  }
+  .ion-card {
+      margin: 10px 10px 10px 10px;
+      width: calc(100% - 20px);
+      border-radius: 2px;
+      font-size: 1.4rem;
+      background: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  .card-event .card-event-location {
+    padding: 0px 10px 0px 16px;
+      color: #777;
+      font-size: 0.9em;
+  }
+  ion-card p {
+      margin: 0 0 2px;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color: #222;
+  }
+  .card-title-md {
+        font-size: 1.6rem;
+      font-weight: 400;
+      padding: 0px 10px 2px 16px;
+      margin: 0;
+    padding-left: 20px;
+    
+  }
+  .card-content-md{
+    padding: 0;
+    position: relative;
+  }
+
+  .heart{
+    color: red;
+  }
+  .share-event{
+    color: #387EF5;
+  }
+  .button-category{
+    padding: 0px 10px 0px 16px;
+    font-weight: 100;
+      text-transform: lowercase;
+  }
+
+  .card-event-date,
+    .var-price {
+      bottom: 10px;
+      color: #fff;
+      font-size: 15px;
+      position: absolute;
+      text-shadow :#000 1px 1px;
+    }
+    .var-price {
+      background-color: rgba(255,255,255,.25);
+        border: 1px solid #999;
+      font-weight: 500;
+      padding: 4px 8px;
+      right: 20px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+        text-align: center;
+    }
+    .card-event-date {
+      background-color: rgba(0,0,0,.25);
+      border: 2px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      left: 20px;
+      padding: 4px 6px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+      text-align: center;
+      // width: 50px;
+      .card-day{
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .card-month{
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+    .bg-price{
+      height: 100px;
+      margin-top: -100px;
+      position: relative;
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); 
+    }
+    .card-event-location {
+        color: #777;
+    }
+}
+
+.tabs-md .tab-button {
+  color: #0d311f;
+}
